@@ -53,15 +53,15 @@ public class BlockBreakListener implements Listener {
                         player.getInventory().addItem(item);
                         block.getDrops().clear();
                     } else {
-                        player.sendMessage(ChatColor.RED + "Please clear up some inventory space before mining a spawner!");
+                        player.sendMessage(ChatColor.RED + "Libère un slot dans ton inventaire avant de récupérer le spawner !");
                         e.setCancelled(true);
                     }
                 } else {
-                    player.sendMessage(ChatColor.RED + "You must use a pickaxe with silk touch to mine a spawner!");
+                    player.sendMessage(ChatColor.RED + "Il te faut une pioche en or silk touch pour miner ce spawner !");
                     e.setCancelled(true);
                 }
             } else {
-                player.sendMessage(ChatColor.RED + "Sorry, you do not have permission to do this!");
+                player.sendMessage(ChatColor.RED + "Tu n'as pas la permission de faire ça !");
                 e.setCancelled(true);
             }
         }

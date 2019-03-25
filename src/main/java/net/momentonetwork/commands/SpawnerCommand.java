@@ -42,7 +42,7 @@ public class SpawnerCommand implements CommandExecutor {
                         }
                     }
                     } else {
-                        sender.sendMessage(ChatColor.RED + "Sorry, you do not have permission to do this!");
+                        sender.sendMessage(ChatColor.RED + "Tu n'as pas la permission de faire ça !");
                     }
                 } else {
                     sender.sendMessage(ChatColor.RED + "Please enter a type. For example: /spawner cow");

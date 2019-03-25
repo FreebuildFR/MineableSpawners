@@ -30,10 +30,10 @@ public class EggChangeListener implements Listener {
             Material targetBlock = e.getClickedBlock().getType();
             if (targetBlock == Material.SPAWNER && handBlock.contains("SPAWN_EGG")) {
                 if (player.hasPermission("mineablespawners.eggchange") || !config.getBoolean("require_permission.egg_change")) {
-                    player.sendMessage(ChatColor.GREEN + "You have successfully changed the spawner with your spawn egg.");
+                    player.sendMessage(ChatColor.GREEN + "Tu as modifié ton spawner avec succès.");
                 } else {
                     e.setCancelled(true);
-                    player.sendMessage(ChatColor.RED + "Sorry, you may not change spawner types using spawn eggs.");
+                    player.sendMessage(ChatColor.RED + "Tu n'as pas la permission de faire ça !");
                 }
             }
         }
